@@ -1,0 +1,58 @@
+{
+  "name": "markdown-svg-equation",
+  "version": "0.0.0",
+  "description": "Convert a TeX/LaTeX string to an SVG and generate an HTML string for inclusion in a Markdown file.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "bin": {
+    "mdeqn": "./bin/cli"
+  },
+  "scripts": {
+    "test": "tape \"./test/*.js\"",
+    "test-cov": "istanbul cover --dir ./reports/coverage --report lcov tape -- \"./test/*.js\"",
+    "coverage": "istanbul cover --dir ./reports/codecov/coverage --report lcovonly tape -- \"./test/*.js\" && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/markdown-svg-equation.git"
+  },
+  "keywords": [
+		"utility",
+		"util",
+		"markdown",
+		"md",
+		"svg",
+		"equation",
+		"eqn",
+		"html",
+		"include",
+		"math",
+		"mathematics",
+		"cli",
+		"latex",
+		"tex",
+		"render"
+	],
+  "bugs": {
+    "url": "https://github.com/kgryte/markdown-svg-equation/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "codecov": "1.x.x",
+    "istanbul": "^0.4.1",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "tap-spec": "4.x.x",
+    "tape": "4.x.x"
+  },
+  "license": "MIT"
+}
