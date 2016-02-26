@@ -1,7 +1,7 @@
 {
-  "name": "markdown-svg-equation",
+  "name": "github-markdown-svg-equation",
   "version": "0.0.0",
-  "description": "Convert a TeX/LaTeX string to an SVG and generate an HTML string for inclusion in a Markdown file.",
+  "description": "Convert a TeX/LaTeX string to an SVG and generate an HTML string for inclusion in a Github Markdown file.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
@@ -23,7 +23,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kgryte/markdown-svg-equation.git"
+    "url": "git://github.com/kgryte/github-markdown-svg-equation.git"
   },
   "keywords": [
 		"utility",
@@ -40,10 +40,13 @@
 		"cli",
 		"latex",
 		"tex",
-		"render"
+		"render",
+    "github",
+    "gh",
+    "gfm"
 	],
   "bugs": {
-    "url": "https://github.com/kgryte/markdown-svg-equation/issues"
+    "url": "https://github.com/kgryte/github-markdown-svg-equation/issues"
   },
   "dependencies": {},
   "devDependencies": {
